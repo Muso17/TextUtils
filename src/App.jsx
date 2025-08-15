@@ -47,6 +47,7 @@ function App() {
         <Navbar btnText={btnText} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <Routes>
+          <Route path="/" element ></Route>
           <Route path="/Accordian" element={
             <div style={{ marginTop: "10vh" }}>
               <div>  <Accordian showAlert={showAlert} /></div>
