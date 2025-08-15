@@ -5,6 +5,7 @@ import TextArea from "./components/TextArea.jsx";
 import { useState } from "react";
 import './App.css';
 import Alert from "./components/Alert.jsx";
+import Home from "./Home.jsx";
 
 function App() {
   let [mode, setMode] = useState({
@@ -47,7 +48,7 @@ function App() {
         <Navbar btnText={btnText} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <Routes>
-          <Route path="/" element ></Route>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/Accordian" element={
             <div style={{ marginTop: "10vh" }}>
               <div>  <Accordian showAlert={showAlert} /></div>
